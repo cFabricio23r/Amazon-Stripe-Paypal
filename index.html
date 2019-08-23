@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link data-n-head="true" rel="icon" type="image/png" href="public/img/favicon.png">
+
+    <!--Slick-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <link rel="stylesheet" href="public/css/app.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <title>Amazon Lite</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <section id="section">
+        <div class="flex flex-col flex-wrap bg-blue-main p-2 items-center justify-center lg:px-8">
+            <div class="w-full flex lg:flex-row flex-col items-center justify-center">
+                <div class="lg:w-2/12 flex items-center justify-center">
+                    <img src="public/img/logo.png" alt="" class="h-auto w-48">
+                </div>
+                <div class="lg:w-7/12 w-full flex items-center justify-center flex-row lg:pr-12">
+                    <div class="lg:inline-block hidden relative lg:w-2/12 pl-12">
+                        <select class="block appearance-none w-full bg-gray-1 border border-gray-400 hover:border-gray-500 px-4 py-2 rounded-l-lg focus:outline-none focus:shadow-outline h-10">
+                              <option>Todos</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                    <div class="lg:w-10/12 w-10/12">
+                        <input class="w-full px-4 py-2 appearance-none border lg:rounded-none rounded-l border-gray-400 hover:border-gray-500 h-10" id="search" type="text" ">
+                    </div>
+                    <div class="bg-orange-main flex justify-center items-center h-10 rounded-r-lg lg:w-1/12 w-2/12">
+                        <span ><i class="fas fa-search fa-lg "></i></span>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 flex justify-center items-end lg:block hidden">
+                    <p class="text-white ">
+                        Servicio al Cliente 24/7. Más información
+                    </p>
+                </div>
+            </div>
+            <div class="w-full h-auto flex lg:flex-row flex-col-reverse items-center justify-center ">
+                <div class="lg:w-2/12 w-full flex items-center justify-start flex-row ">
+                    <div class="lg:w-1/2 w-auto flex items-center justify-end px-2 py-2 lg:-ml-10 ">
+                        <span class="tetx-white "><i class="fas fa-map-marker-alt fa-lg " style="color:white "></i></span>
+                    </div>
+                    <div class="lg:w-1/2 w-auto flex lg:flex-col flex-row text-white justify-center items-center">
+                        <p class="text-xs lg:px-0 px-2">Enviar a</p>
+                        <p class="font-bold text-md lg:-mt-1 ">El Salvador</p>
+                    </div>
+                </div>
+                <div class="lg:w-7/12 w-full flex flex-1 lg:items-center lg:justify-between lg:flex-row lg:pr-6 lg:pl-6 text-white">
+                    <div class="relative overflow-x-scroll scrolling-touch xl:overflow-x-hidden"  style="white-space: nowrap;">
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center">
+                            <p class="text-sm ">Departamentos</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center">
+                            <p class="text-sm ">Ofertas del dia</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center">
+                            <p class="text-sm ">Tu amazon.com</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center">
+                            <p class="text-sm ">Tarjetas de Regalo</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center">
+                            <p class="text-sm ">Ayuda</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center">
+                            <p class="text-sm ">Listas</p>	
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center">
+                            <p class="text-sm ">Vender</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="lg:w-3/12 lg:flex justify-between items-end flex-row hidden">
+                    <div class="w-1/12 ">
+
+                    </div>
+                    <div class="flex flex-col w-4/12 px-2 ">
+                        <div class="w-auto ">
+                            <p class="text-white text-xs ">Hola, Identificate</p>
+                        </div>
+                        <div class="w-auto ">
+                            <h4 class="font-bold text-white text-sm ">Cuenta y Listas</h4>
+                        </div>
+
+                    </div>
+                    <div class="w-3/12 flex items-center justify-center px-2 ">
+                        <a><h4 class="font-bold text-white text-sm ">Pedidos</h4></a>
+                    </div>
+                    <div class="w-4/12 flex flex-row items-end justify-center px-2 ">
+                        <div class="w-1/2 ">
+                            <span><img src="public/img/cart.png.png " alt=" " class="h-10 "></span>
+                        </div>
+                        <div class="w-1/2 -ml-4 ">
+                            <a><h4 class="font-bold text-white text-sm ">Carrito</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Main body-->
+    <section id="main " class="bg-main">
+        <div class="flex flex-col justify-center items-center mx-4 ">
+            <div class="flex lg:flex-row flex-col justify-between items-center lg:pt-56 pt-12">
+                <div class="lg:w-3/12 lg:mx-4 mx-0 lg:my-0 my-2 ">
+                    <div class="max-w-sm rounded shadow-lg bg-white card-custom flex flex-col ">
+                        <div class="px-6 py-4 ">
+                            <div class="font-bold text-xl mb-2 ">Ofertas y Promociones</div>
+                        </div>
+                        <div class="h-64 flex items-start justify-center ">
+                            <img src="public/img/img-box.png " alt="" class="h-auto ">
+                        </div>
+                        <div class="px-6 py-4 h-auto items-end ">
+                            <p class="text-xs mb-6 ">Más información sobre cómo comprar en Amazon</p>
+                            <p class="text-xs text-blue-1 font-bold ">Más información </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 lg:mx-4 mx-0 lg:my-0 my-2 ">
+                    <div class="flex flex-col rounded shadow-lg bg-white card-custom ">
+                        <div class="px-6 py-4 ">
+                            <div class="font-bold text-xl mb-2 ">Ofertas y Promociones</div>
+                        </div>
+                        <div class="h-64 flex items-start justify-center ">
+                            <img src="public/img/box-gift.png " alt=" " class="h-full ">
+                        </div>
+                        <div class="px-6 py-4 h-auto ">
+                            <p class="text-xs mb-6 ">Más información sobre cómo comprar en Amazon</p>
+                            <p class="text-xs text-blue-1 font-bold ">Más información </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 lg:mx-4 mx-0 lg:my-0 my-2 ">
+                    <div class="max-w-sm rounded shadow-lg bg-white card-custom ">
+                        <div class="px-6 py-4 ">
+                            <div class="font-bold text-xl mb-2 ">Ofertas y Promociones</div>
+                        </div>
+                        <div class="h-64 flex justify-center items-start ">
+                            <img src="public/img/img-shoes.png " alt=" " class="h-full ">
+                        </div>
+                        <div class="px-6 py-4 h-auto ">
+                            <p class="text-xs mb-6 ">Más información sobre cómo comprar en Amazon</p>
+                            <p class="text-xs text-blue-1 font-bold ">Más información </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 lg:mx-4 mx-0 lg:my-0 my-2 ">
+                    <div class="max-w-sm rounded shadow-lg bg-white card-custom ">
+                        <div class="px-6 py-4 ">
+                            <div class="font-bold text-xl mb-2 ">Inicia Sesión para vivir tu mejor experiencia</div>
+                        </div>
+                        <div class="px-6 py-4 h-auto flex items-center justify-center ">
+                            <a href=" " class="bg-button-main text-md font-bold rounded py-2 px-6 border border-orange-700 ">Iniciar sesión de forma segura</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col py-2 mt-8 bg-white w-11/12 ">
+                <div class="font-bold py-4 mb-2 px-4 ">
+                    <h2 class="text-xl ">Lo Más Vendidos en Hogar y Cocina <span class="text-sm text-blue-1 px-4 ">Ver más</span></h2>
+                </div>
+                <div class="responsive px-4 ">
+                    <div>
+                        <a href="./product.html"><img src="public/img/img-c1-1.png " alt=" ">
+                        </a>
+                    </div>
+                    <div>
+                        <img src="public/img/img-c1-2.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c1-3.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c1-4.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c1-5.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c1-6.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c1-7.png " alt=" ">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col py-2 mt-8 bg-white w-11/12 ">
+                <div class="font-bold py-4 mb-2 px-4 ">
+                    <h2 class="text-xl ">Lo Más Vendidos en Deportes y Activades al Aire Libre <span class="text-sm text-blue-1 px-4 ">Ver más</span></h2>
+                </div>
+                <div class="responsive px-4 ">
+                    <div>
+                        <img src="public/img/img-c2-1.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c2-2.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c2-3.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c2-4.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c2-5.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c2-6.png " alt=" ">
+                    </div>
+                    <div>
+                        <img src="public/img/img-c2-7.png " alt=" ">
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="bg-blue-2 mt-32 ">
+        <div class="flex flex-row justify-center items-center py-4 ">
+            <div class="text-white ">
+                <h2>Inicio de página</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-main ">
+        <div class="flex flex-col justify-center items-center ">
+            <div class="flex lg:flex-row flex-col lg:w-9/12 w-full py-12 ">
+                <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4">
+                    <h3 class="font-bold text-lg lg:text-left text-center">Conócenos</h3>
+                    <div class="lg:inline hidden">
+                        <p class="text-sm ">Trabaja en Amazon</p>
+                        <p class="text-sm ">Blog</p>
+                        <p class="text-sm ">Acerca de Amazon</p>
+                        <p class="text-sm ">Relaciones con los inversionistas</p>
+                        <p class="text-sm ">Dispositivos Amazon</p>
+                        <p class="text-sm ">Visita un centro logístico de Amazon</p>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4">
+                    <h3 class="font-bold text-lg  lg:text-left text-center">Gana dinero con nosotros</h3>
+                    <div class="lg:inline hidden">
+                        <p class="text-sm ">Vende en Amazon</p>
+                        <p class="text-sm ">Vende tus servicios en Amazon</p>
+                        <p class="text-sm ">Vende en Amaon Business</p>
+                        <p class="text-sm ">Vende tus Apps en Amazon</p>
+                        <p class="text-sm ">Programa de afiliados</p>
+                        <p class="text-sm ">Anuncia tus productos</p>
+                        <p class="text-sm ">Pubilca tu libro en Kindle</p>
+                        <p class="text-sm ">> Ver Más</p>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4">
+                    <h3 class="font-bold text-lg  lg:text-left text-center">Productos de Pago Amazon</h3>
+                    <div class="lg:inline hidden">
+                        <p class="text-sm ">Compra con puntos</p>
+                        <p class="text-sm ">Recarga tu Saldo</p>
+                        <p class="text-sm ">Convertidor de Moneda de Amazon</p>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4">
+                    <h3 class="font-bold text-lg  lg:text-left text-center">Podemos ayudarte</h3>
+                    <div class="lg:inline hidden">
+                        <p class="text-sm ">Tu cuenta</p>
+                        <p class="text-sm ">Tus pedidos</p>
+                        <p class="text-sm ">Tarifas de Envío y Políticas</p>
+                        <p class="text-sm ">Devoluciones y Reemplazos</p>
+                        <p class="text-sm ">Admistrar dispositivos</p>
+                        <p class="text-sm ">Amazon Assistant</p>
+                        <p class="text-sm ">Ayuda</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center ">
+                <img src="public/img/logo.png " alt=" " class="h-16 w-auto mb-8 ">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script>
+
+    <script src="public/js/scripts.js "></script>
+    <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
+    <script type="text/javascript " src="//code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
+    <script type="text/javascript " src="slick/slick.min.js "></script>
+</body>
+
+</html>

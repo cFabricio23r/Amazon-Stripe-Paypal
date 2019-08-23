@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link data-n-head="true" rel="icon" type="image/png" href="public/img/favicon.png">
+
+    <!--Slick-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <link rel="stylesheet" href="public/css/app.css">
+    <title>Amazon Lite</title>
+</head>
+
+<body class="bg-white">
+    <!--Navbar-->
+    <section id="section">
+        <div class="flex flex-col flex-wrap bg-blue-main p-2 items-center justify-center lg:px-8">
+            <div class="w-full flex lg:flex-row flex-col items-center justify-center">
+                <div class="lg:w-2/12 flex items-center justify-center">
+                    <img src="public/img/logo.png" alt="" class="h-auto w-48">
+                </div>
+                <div class="lg:w-7/12 w-full flex items-center justify-center flex-row lg:pr-12">
+                    <div class="lg:inline-block hidden relative lg:w-2/12 pl-12">
+                        <select class="block appearance-none w-full bg-gray-1 border border-gray-400 hover:border-gray-500 px-4 py-2 rounded-l-lg focus:outline-none focus:shadow-outline h-10">
+                              <option>Todos</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                    <div class="lg:w-10/12 w-10/12">
+                        <input class="w-full px-4 py-2 appearance-none border lg:rounded-none rounded-l border-gray-400 hover:border-gray-500 h-10" id="search" type="text" ">
+                    </div>
+                    <div class="bg-orange-main flex justify-center items-center h-10 rounded-r-lg lg:w-1/12 w-2/12 ">
+                        <span ><i class="fas fa-search fa-lg "></i></span>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 flex justify-center items-end lg:block hidden ">
+                    <p class="text-white ">
+                        Servicio al Cliente 24/7. Más información
+                    </p>
+                </div>
+            </div>
+            <div class="w-full h-auto flex lg:flex-row flex-col-reverse items-center justify-center ">
+                <div class="lg:w-2/12 w-full flex items-center justify-start flex-row ">
+                    <div class="lg:w-1/2 w-auto flex items-center justify-end px-2 py-2 lg:-ml-10 ">
+                        <span class="tetx-white "><i class="fas fa-map-marker-alt fa-lg " style="color:white "></i></span>
+                    </div>
+                    <div class="lg:w-1/2 w-auto flex lg:flex-col flex-row text-white justify-center items-center ">
+                        <p class="text-xs lg:px-0 px-2 ">Enviar a</p>
+                        <p class="font-bold text-md lg:-mt-1 ">El Salvador</p>
+                    </div>
+                </div>
+                <div class="lg:w-7/12 w-full flex flex-1 lg:items-center lg:justify-between lg:flex-row lg:pr-6 lg:pl-6 text-white ">
+                    <div class="relative overflow-x-scroll scrolling-touch xl:overflow-x-hidden "  style="white-space: nowrap; ">
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Departamentos</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Ofertas del dia</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Tu amazon.com</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Tarjetas de Regalo</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Ayuda</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Listas</p>	
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Vender</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="lg:w-3/12 lg:flex justify-between items-end flex-row hidden ">
+                    <div class="w-1/12 ">
+
+                    </div>
+                    <div class="flex flex-col w-4/12 px-2 ">
+                        <div class="w-auto ">
+                            <p class="text-white text-xs ">Hola, Identificate</p>
+                        </div>
+                        <div class="w-auto ">
+                            <h4 class="font-bold text-white text-sm ">Cuenta y Listas</h4>
+                        </div>
+
+                    </div>
+                    <div class="w-3/12 flex items-center justify-center px-2 ">
+                        <a><h4 class="font-bold text-white text-sm ">Pedidos</h4></a>
+                    </div>
+                    <div class="w-4/12 flex flex-row items-end justify-center px-2 ">
+                        <div class="w-1/2 ">
+                            <span><img src="public/img/cart.png.png " alt=" " class="h-10 "></span>
+                        </div>
+                        <div class="w-1/2 -ml-4 ">
+                            <a><h4 class="font-bold text-white text-sm ">Carrito</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="py-2 shadow flex lg:flex-row flex-col lg:px-8 px-2 items-center justify-between border-b border-gray-400 ">
+            <div class="lg:w-1/2 lg:px-24 px-2 ">
+                <p class="lg:text-sm text-xs ">1 a 48 de 135 resultados para <span class="font-bold ">Moda para todos:</span> <span class="font-bold text-red-600 ">Zapatos</span></p>
+            </div>
+            <div class="lg:w-1/2 flex justify-end lg:mt-0 mt-4 ">
+                <select class="appearance-none bg-gray-2 border border-gray-400 hover:border-gray-500 px-4 py-1 pr-8 rounded focus:outline-none focus:shadow-outline text-sm font-bold ">
+                        <option>Ordenar por: Artículos destacados</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                </select>
+                <div class="pointer-events-none absolute flex items-center px-2 py-2 text-gray-700 ">
+                    <svg class="fill-current h-4 w-4 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 "><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z "/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="flex lg:flex-row flex-col py-4 ">
+            <div class="lg:w-1/5 lg:flex flex-col border-r border-gray-400 px-4 hidden ">
+                <div class="flex flex-col mb-4 ">
+                    <div class="font-bold text-md mb-2 ">
+                        Departamentos
+                    </div>
+                    <div class="font-semibold text-md text-gray-3 mb-2 ">
+                        <p>< Moda para Mujer</p> 
+                    </div>
+                    <div class="font-bold text-md mb-2 pl-4 ">
+                        <p>Zapatos</p>
+                        <ul class="pl-4 font-semibold text-gray-3 ">
+                            <li>Deportes</li>
+                            <li>Tenis de Moda</li>
+                            <li>Zapatos Bajos</li>
+                            <li>Mocasines y Zapatos sin Talón</li>
+                            <li>Zuevos</li>
+                            <li>Exteriores</li>
+                            <li>Zapatilas</li>
+                            <li>Sandalias</li>
+                            <li>Pantuflas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col mb-4 ">
+                    <div class="font-bold text-md mb-2 ">
+                        Opinión media de los clientes
+                    </div>
+                    <div class="flex flex-row justify-between items-center ">
+                        <div class="w-4/6 ">
+                            <fieldset class="rating ">
+                                <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                            </fieldset>
+                        </div>
+                        <div class="w-2/6 flex items-center justify-start ">
+                            <p class="text-gray-3 font-semibold text-md ">o más</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center ">
+                        <div class="w-4/6 ">
+                            <fieldset class="rating ">
+                                <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                            </fieldset>
+                        </div>
+                        <div class="w-2/6 flex items-center justify-start ">
+                            <p class="text-gray-3 font-semibold text-md ">o más</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center ">
+                        <div class="w-4/6 ">
+                            <fieldset class="rating ">
+                                <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                            </fieldset>
+                        </div>
+                        <div class="w-2/6 flex items-center justify-start ">
+                            <p class="text-gray-3 font-semibold text-md ">o más</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center ">
+                        <div class="w-4/6 ">
+                            <fieldset class="rating ">
+                                <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                            </fieldset>
+                        </div>
+                        <div class="w-2/6 flex items-center justify-start ">
+                            <p class="text-gray-3 font-semibold text-md ">o más</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col mb-4 ">
+                    <div class="font-bold text-md mb-2 ">
+                        Moda de Amazon
+                    </div>
+                    <div class="font-semibold text-md text-gray-3 mb-2 ">
+                        <p>Mejores Marcas</p> 
+                    </div>
+                </div>
+
+                <div class="flex flex-col mb-4 ">
+                    <div class="font-bold text-md mb-2 ">
+                        Marca
+                    </div>
+                    <div class="font-semibold text-md text-gray-3 mb-2 ">
+                        <div class="flex flex-row ">
+                            <p>Caramella Bubble</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>DLGJPA</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>Gracosy</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>Herstyle</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>Adidas</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>Luoika</p> 
+                        </div> 
+                    </div>
+                    <div class="font-bold text-md mb-1 text-blue-1 ">
+                        Ver más
+                    </div>
+                </div>
+
+                <div class="flex flex-col mb-4 ">
+                    <div class="font-bold text-md mb-2 ">
+                        Precio
+                    </div>
+                    <div class="font-semibold text-md text-gray-3 mb-2 ">
+                        <div class="flex flex-row ">
+                            <p>Menos de $25</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>$25 a $50</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>$50 a $100</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>$100 a $200</p> 
+                        </div> 
+                        <div class="flex flex-row w-4/6 py-1 ">
+                            <div class="w-1/3 border border-gray-400 mr-2 p-2 rounded-lg ">
+                                <input type="text " name=" " id=" " placeholder="$ Min. " class="w-full focus:outline-none appearance-none ">
+                            </div>
+                            <div class="w-1/3 border border-gray-400 mr-2 p-2 rounded-lg ">
+                                <input type="text " name=" " id=" " placeholder="$ Max. " class="w-full focus:outline-none appearance-none ">
+                            </div>
+                            <div class="w-1/3 ">
+                                <div class="bg-gray-2 border border-gray-400 hover:border-gray-500 rounded-lg h-full w-12 flex items-center justify-center ">
+                                    <p class="font-bold text-md ">Ir</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="flex flex-col mb-4 ">
+                    <div class="font-bold text-md mb-1 ">
+                        Ancho de Calzado
+                    </div>
+                    <div class="flex flex-row py-1 flex-wrap ">
+                        <div class="border border-gray-400 mr-1 mt-1 p-2 rounded flex items-center justify-center " style="width: 3.5rem; ">
+                            <p>XXN</p>
+                        </div>
+                        <div class="border border-gray-400 mr-1 mt-1 p-2 rounded flex items-center justify-center " style="width: 3.5rem; ">
+                            <p>XN</p>
+                        </div>
+                        <div class="border border-gray-400 mr-1 mt-1 p-2 rounded flex items-center justify-center " style="width: 3.5rem; ">
+                            <p>N</p>
+                        </div>
+                        <div class="border border-gray-400 mr-1 mt-1 p-2 rounded flex items-center justify-center " style="width: 3.5rem; ">
+                            <p>M</p>
+                        </div>
+                        <div class="border border-gray-400 mr-1 mt-1 p-2 rounded flex items-center justify-center " style="width: 3.5rem; ">
+                            <p>W</p>
+                        </div>
+                        <div class="border border-gray-400 mr-1 mt-1 p-2 rounded flex items-center justify-center " style="width: 3.5rem; ">
+                            <p>XW</p>
+                        </div>
+                        <div class="border border-gray-400 mr-1 mt-1 p-2 rounded flex items-center justify-center " style="width: 3.5rem; ">
+                            <p>XXW</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="flex flex-col mb-4 ">
+                    <div class="font-bold text-md mb-2 ">
+                        Ancho de Calzado
+                    </div>
+                    <div class="font-semibold text-md text-gray-3 mb-2 ">
+                        <div class="flex flex-row ">
+                            <p>Menos de 1”</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>1 a 1 3/4”</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>2 a 2 3/4”</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>3 a 3 3/4”</p> 
+                        </div> 
+                        <div class="flex flex-row ">
+                            <p>4” y Más</p> 
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+            <div class="lg:w-4/5 w-full flex flex-row items-center justify-center ">
+                <div class="lg:w-10/12 w-full flex flex-col ">
+                    <div class="flex lg:flex-row flex-col pt-4 mx-2 ">
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 justify-center ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-row flex-col pt-4 mx-2 ">
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-row flex-col pt-4 mx-2 ">
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/4 flex flex-col border-b border-gray-400 mx-2 py-6 ">
+                            <div class="flex justify-center items-center mb-4 h-auto ">
+                                <img src="public/img/img-prod-3.png " alt=" " class=" ">                    
+                            </div>
+                            <div class="px-2 mb-4 ">
+                                <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 justify-start items-center ">
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-1.png " alt=" ">
+                                </div>
+                                <div class="w-1/6 ">
+                                    <img src="public/img/Line 3.png " alt=" ">
+                                </div>
+                                <div class="w-2/6 ">
+                                    <img src="public/img/num-2.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class="flex flex-row px-2 mb-4 ">
+                                <div class="w-4/6 ">
+                                    <fieldset class="rating ">
+                                        <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                        <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                        <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                        <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                        <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                        <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                        <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                        <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                        <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                        <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                    </fieldset>
+                                </div>
+                                <div class="w-2/6 flex justify-center items-center ">
+                                    <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                                </div>
+                            </div>
+                            <div class="px-2 ">
+                            </div>
+                        </div>>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center py-2 border-b border-gray-400 mx-2 ">
+                        <div class="flex flex-row lg:w-5/12 items-center ">
+                            <div class="w-1/3 flex justify-end ">
+                                <div class="flex flex-row justify-between items-center lg:px-4 px-2 lg:h-10 h-6 focus:outline-none focus:shadow-outline text-sm font-bold ">
+                                    <img src="public/img/arrow_backward_24px.png " alt=" " class="h-3 w-auto px-2 ">
+                                    <p class="text-gray-1 ">Anterior</p>
+                                </div>
+                            </div>
+                            <div class="w-1/3 flex flex-row ">
+                                <div class="w-1/3 flex justify-center items-center bg-gray-2 border border-gray-300 hover:border-gray-400 lg:px-4 px-2 lg:h-10 h-6 rounded focus:outline-none focus:shadow-outline text-sm mx-1 ">
+                                    <p>1</p>
+                                </div>
+                                <div class="w-1/3 flex justify-center items-center bg-gray-2 border border-gray-300 hover:border-gray-400 lg:px-4 px-2 lg:h-10 h-6 rounded focus:outline-none focus:shadow-outline text-sm mx-1 ">
+                                    <p>2</p>
+                                </div>
+                                <div class="w-1/3 flex justify-center items-center bg-gray-2 border border-gray-300 hover:border-gray-400 lg:px-4 px-2 lg:h-10 h-6 rounded focus:outline-none focus:shadow-outline text-sm mx-1 ">
+                                    <p>3</p>
+                                </div>
+                            </div>
+                            <div class="w-1/3 flex justify-start mx-1 ">
+                                <div class="flex flex-row justify-between items-center bg-gray-2 border border-gray-400 hover:border-gray-500 lg:px-4 px-2 lg:h-10 h-6 rounded focus:outline-none focus:shadow-outline text-sm font-bold ">
+                                    <p>Siguiente</p>
+                                    <img src="public/img/arrow_forward_24px.png " alt=" " class="h-3 w-auto px-2 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-2 mt-12 ">
+            <div class="flex flex-row justify-center items-center py-4 ">
+                <div class="text-white ">
+                    <h2>Inicio de página</h2>
+                </div>
+            </div>
+        </section>
+    
+        <section class="bg-blue-main ">
+            <div class="flex flex-col justify-center items-center ">
+                <div class="flex lg:flex-row flex-col lg:w-9/12 w-full py-12 ">
+                    <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4 ">
+                        <h3 class="font-bold text-lg lg:text-left text-center ">Conócenos</h3>
+                        <div class="lg:inline hidden ">
+                            <p class="text-sm ">Trabaja en Amazon</p>
+                            <p class="text-sm ">Blog</p>
+                            <p class="text-sm ">Acerca de Amazon</p>
+                            <p class="text-sm ">Relaciones con los inversionistas</p>
+                            <p class="text-sm ">Dispositivos Amazon</p>
+                            <p class="text-sm ">Visita un centro logístico de Amazon</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4 ">
+                        <h3 class="font-bold text-lg lg:text-left text-center ">Gana dinero con nosotros</h3>
+                        <div class="lg:inline hidden ">
+                            <p class="text-sm ">Vende en Amazon</p>
+                            <p class="text-sm ">Vende tus servicios en Amazon</p>
+                            <p class="text-sm ">Vende en Amaon Business</p>
+                            <p class="text-sm ">Vende tus Apps en Amazon</p>
+                            <p class="text-sm ">Programa de afiliados</p>
+                            <p class="text-sm ">Anuncia tus productos</p>
+                            <p class="text-sm ">Pubilca tu libro en Kindle</p>
+                            <p class="text-sm ">> Ver Más</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4 ">
+                        <h3 class="font-bold text-lg lg:text-left text-center ">Productos de Pago Amazon</h3>
+                        <div class="lg:inline hidden ">
+                            <p class="text-sm ">Compra con puntos</p>
+                            <p class="text-sm ">Recarga tu Saldo</p>
+                            <p class="text-sm ">Convertidor de Moneda de Amazon</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4 ">
+                        <h3 class="font-bold text-lg lg:text-left text-center ">Podemos ayudarte</h3>
+                        <div class="lg:inline hidden ">
+                            <p class="text-sm ">Tu cuenta</p>
+                            <p class="text-sm ">Tus pedidos</p>
+                            <p class="text-sm ">Tarifas de Envío y Políticas</p>
+                            <p class="text-sm ">Devoluciones y Reemplazos</p>
+                            <p class="text-sm ">Admistrar dispositivos</p>
+                            <p class="text-sm ">Amazon Assistant</p>
+                            <p class="text-sm ">Ayuda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center ">
+                    <img src="public/img/logo.png " alt=" " class="h-16 w-auto mb-8 ">
+                </div>
+            </div>
+        </section>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script>
+    
+        <script src="public/js/scripts.js "></script>
+    </body>
+    
+    </html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link data-n-head="true" rel="icon" type="image/png" href="public/img/favicon.png">
+
+    <!--Slick-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <link rel="stylesheet" href="public/css/app.css">
+    <title>Amazon Lite</title>
+</head>
+
+<body class="bg-white">
+    <!--Navbar-->
+    <section id="section">
+        <div class="flex flex-col flex-wrap bg-blue-main p-2 items-center justify-center lg:px-8">
+            <div class="w-full flex lg:flex-row flex-col items-center justify-center">
+                <div class="lg:w-2/12 flex items-center justify-center">
+                    <img src="public/img/logo.png" alt="" class="h-auto w-48">
+                </div>
+                <div class="lg:w-7/12 w-full flex items-center justify-center flex-row lg:pr-12">
+                    <div class="lg:inline-block hidden relative lg:w-2/12 pl-12">
+                        <select class="block appearance-none w-full bg-gray-1 border border-gray-400 hover:border-gray-500 px-4 py-2 rounded-l-lg focus:outline-none focus:shadow-outline h-10">
+                              <option>Todos</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                    <div class="lg:w-10/12 w-10/12">
+                        <input class="w-full px-4 py-2 appearance-none border lg:rounded-none rounded-l border-gray-400 hover:border-gray-500 h-10" id="search" type="text" ">
+                    </div>
+                    <div class="bg-orange-main flex justify-center items-center h-10 rounded-r-lg lg:w-1/12 w-2/12 ">
+                        <span ><i class="fas fa-search fa-lg "></i></span>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 flex justify-center items-end lg:block hidden ">
+                    <p class="text-white ">
+                        Servicio al Cliente 24/7. Más información
+                    </p>
+                </div>
+            </div>
+            <div class="w-full h-auto flex lg:flex-row flex-col-reverse items-center justify-center ">
+                <div class="lg:w-2/12 w-full flex items-center justify-start flex-row ">
+                    <div class="lg:w-1/2 w-auto flex items-center justify-end px-2 py-2 lg:-ml-10 ">
+                        <span class="tetx-white "><i class="fas fa-map-marker-alt fa-lg " style="color:white "></i></span>
+                    </div>
+                    <div class="lg:w-1/2 w-auto flex lg:flex-col flex-row text-white justify-center items-center ">
+                        <p class="text-xs lg:px-0 px-2 ">Enviar a</p>
+                        <p class="font-bold text-md lg:-mt-1 ">El Salvador</p>
+                    </div>
+                </div>
+                <div class="lg:w-7/12 w-full flex flex-1 lg:items-center lg:justify-between lg:flex-row lg:pr-6 lg:pl-6 text-white ">
+                    <div class="relative overflow-x-scroll scrolling-touch xl:overflow-x-hidden "  style="white-space: nowrap; ">
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Departamentos</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Ofertas del dia</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Tu amazon.com</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Tarjetas de Regalo</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Ayuda</p>
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Listas</p>	
+                        </div>
+                        <div class="relative float-none inline-block lg:w-auto py-4 px-5 w-1/3 text-center ">
+                            <p class="text-sm ">Vender</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="lg:w-3/12 lg:flex justify-between items-end flex-row hidden ">
+                    <div class="w-1/12 ">
+
+                    </div>
+                    <div class="flex flex-col w-4/12 px-2 ">
+                        <div class="w-auto ">
+                            <p class="text-white text-xs ">Hola, Identificate</p>
+                        </div>
+                        <div class="w-auto ">
+                            <h4 class="font-bold text-white text-sm ">Cuenta y Listas</h4>
+                        </div>
+
+                    </div>
+                    <div class="w-3/12 flex items-center justify-center px-2 ">
+                        <a><h4 class="font-bold text-white text-sm ">Pedidos</h4></a>
+                    </div>
+                    <div class="w-4/12 flex flex-row items-end justify-center px-2 ">
+                        <div class="w-1/2 ">
+                            <span><img src="public/img/cart.png.png " alt=" " class="h-10 "></span>
+                        </div>
+                        <div class="w-1/2 -ml-4 ">
+                            <a><h4 class="font-bold text-white text-sm ">Carrito</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Main body-->
+    <section id="main " class="bg-white flex flex-col items-center border-b border-gray-400 ">
+        <div class="flex lg:flex-row flex-col lg:justify-between lg:px-12 py-8 ">
+            <div class="lg:w-3/12 flex flex-col lg:mx-4 mx-2 ">
+                <div class="w-auto ">
+                    <img src="public/img/img-prod.png " alt=" " class="w-auto ">
+                </div>
+                <div class="w-auto ">
+                    <div class="text-center ">
+                        <p class="text-gray-1 text-xs ">Pasa el mosue encima de la imagen par aplicar zoom</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-6/12 flex flex-col mx-4 ">
+                <div class="border-b-2 flex flex-col w-auto ">
+                    <div class="mb-4 w-auto ">
+                        <p class="font-bold lg:text-lg text-md lg:text-left text-center ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad, impreso, bolsillo profundo, antiarrugas, resistente al desgaste y a las manchas, hipoalergénico, 4 piezas, Microfibra, Celeste (Baby Blue), gemelo</p>
+                    </div>
+                    <div class="mb-2 flex w-full ">
+                        <p class="font-semibold ">de <span class="text-blue-1 ">Mellani</span></p>
+                    </div>
+                    <div class="flex lg:flex-row flex-col justify-between items-center w-full ">
+                        <div class="lg:w-3/12 ">
+                            <fieldset class="rating ">
+                                <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                            </fieldset>
+                        </div>
+                        <div class="lg:w-9/12 text-right flex lg:flex-row flex-col justify-center items-center ">
+                            <p class="text-blue-1 font-semibold text-md ">55,998 opiniones de clientes      <span class="text-black lg:inline hidden ">| </span> </p>
+                            <p class="text-blue-1 font-semibold text-md lg:pl-2 "> más de 1000+ preguntas respondidas</p>
+                        </div>  
+                    </div>
+                    <div class="flex flex-col ">
+                        <div class="py-2 ">
+                            <p class="font-semibold "><span class="text-green-1 ">Disponible a través</span> de <span class="text-blue-1 ">estos vendedores.</span></p>
+                        </div>
+                        <div class="py-2 ">
+                            <p class="text-sm "><span class="text-gray-1 ">Tamaño:</span> <span class="font-semibold ">Twin</span></p>
+                        </div>
+                        <div class="flex flex-row justify-start text-sm flex-wrap ">
+                            <div class="border border-gray-400 mx-2 px-3 py-2 hover:bg-orange-200 hover:border-orange-800 mb-2 ">Twin</div>
+                            <div class="border border-gray-400 mx-2 px-3 py-2 hover:bg-orange-200 hover:border-orange-800 mb-2 ">Twin XL</div>
+                            <div class="border border-gray-400 mx-2 px-3 py-2 hover:bg-orange-200 hover:border-orange-800 mb-2 ">Full</div>
+                            <div class="border border-gray-400 mx-2 px-3 py-2 hover:bg-orange-200 hover:border-orange-800 mb-2 ">Queen</div>
+                            <div class="border border-gray-400 mx-2 px-3 py-2 hover:bg-orange-200 hover:border-orange-800 mb-2 ">King</div>
+                            <div class="border border-gray-400 mx-2 px-3 py-2 hover:bg-orange-200 hover:border-orange-800 mb-2 ">King</div>
+                            <div class="border border-gray-400 mx-2 px-3 py-2 hover:bg-orange-200 hover:border-orange-800 mb-2 ">California King</div>
+                            <div class="border border-gray-400 mx-2 px-3 py-2 hover:bg-orange-200 hover:border-orange-800 mb-2 ">Split King</div>
+                        </div>
+                        <div class="py-2 ">
+                            <p class="text-sm "><span class="text-gray-1 ">Color:</span> <span class="font-semibold ">Blue Hydrangea</span></p>
+                        </div>
+                        <div class="flex flex-row mb-2 ">
+                            <div class="mr-2 ">
+                                <img src="public/img/img-s-1.png " alt=" ">
+                            </div>
+                            <div class="mr-2 ">
+                                <img src="public/img/img-s-2.png " alt=" ">
+                            </div>
+                            <div class="mr-2 ">
+                                <img src="public/img/img-s-3.png " alt=" ">
+                            </div>
+                            <div class="mr-2 ">
+                                <img src="public/img/img-s-4.png " alt=" ">
+                            </div>
+                        </div>
+                        <div class="ml-4 ">
+                            <ul class="list-prod text-sm ">
+                                <li>100 % poliéster</li>
+                                <li>Importado</li>
+                                <li>Siente la diferencia, duerme mejor y despierta cada mañana sintiéndote renovado y lleno de energía. Sedoso suave, más cómodo y hojas de cama de lujo que puedes encontrar. Lo mejor para cualquier habitación de tu casa, habitación, habitación de huéspedes, sala de niños, RV, casa de día festivo. Idea de regalo para hombres y mujeres, madres y padres día del padre, de San Valentín y la Navidad.</li>
+                                <li>Tamaño Queen, juego de cama de 4 piezas, 1 sábana lisa de 102 x 90 pulgadas, 1 sábana bajera de 80 x 60 pulgadas, 2 fundas de almohada de 20 x 30 pulgadas. Sábana ajustable con bolsillo profundo con elástico alrededor (no sólo las esquinas, como otras sábanas). Se adapta a colchones de hasta 16 pulgadas.</li>
+                                <li>Tamaño Queen, juego de cama de 4 piezas, 1 sábana lisa de 102 x 90 pulgadas, 1 sábana bajera de 80 x 60 pulgadas, 2 fundas de almohada de 20 x 30 pulgadas. Sábana ajustable con bolsillo profundo con elástico alrededor (no sólo las esquinas, como otras sábanas). Se adapta a colchones de hasta 16 pulgadas.</li>
+                                <li>Fácil cuidado, resistente a manchas, la decoloración, resistente a las arrugas. Lavable a máquina en frío. Se seca rápido en secadora baja. Más duradero que el algodón. Hipoalergénico y resistente a los ácaros del polvo.</li>
+                                <li>Más alta calidad: hecho de los materiales de la más alta calidad y mano de obra, por eso sabes lo que dura. La fabulosa selección de colores hará que tu habitación parezca sacada de una revista.</li>
+                                <li>- -</li>
+                            </ul>
+                        </div>
+                        <div class="py-4 ">
+                            <div><h3 class="text-lg text-blue-1 font-bold ">Comparar con artículos similares</h3></div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="lg:w-2/12 flex flex-col mx-4 ">
+                <div class="border border-gray-200 shadow rounded flex flex-col pt-4 px-1 ">
+                    <div class="mb-4 border-b px-3 ">
+                        <div class="mb-4 ">
+                            <p class="font-bold text-sm ">Nuevo:</p>
+                        </div>
+                        <div class="mb-4 ">
+                            <p class="text-sm ">Este artículo no se envía <span class="font-bold ">a San Salvador, El Salvador.</span> Verifica otros vendedores que puedan hacer envios internacionales. <span class="text-blue-1 font-bold ">Más información</span></p>
+                        </div>
+                        <div class="mb-4 ">
+                            <p class="text-green-1 text-sm font-bold ">Disponible</p>
+                        </div>
+                        <div class="flex flex-row justify-start items-center mb-4 ">
+                            <div class="inline-block relative flex flex-row justify-start items-center ">
+                                <div class="appearance-none w-full bg-gray-2 border-l border-t border-b border-gray-400 hover:border-gray-500 px-2 rounded-l focus:outline-none focus:shadow-outline h-8 flex justify-center items-center ">
+                                    <p class="text-sm font-bold ">Cantidad:</p>
+                                </div>
+                                <select class="appearance-none bg-gray-2 border-r border-t border-b border-gray-400 hover:border-gray-500 px-2 pr-8 rounded-r focus:outline-none focus:shadow-outline h-8 text-sm font-bold ">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 ">
+                                    <svg class="fill-current h-4 w-4 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 "><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z "/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 ">
+                            <div class="block bg-button-main text-sm font-bold rounded border border-orange-700 p-1 flex flex-row items-center justify-rounded ">
+                                <div class="w-1/6 bg-black rounded p-1 flex items-center justify-center ">
+                                <img src="public/img/cart-icon.png "/>
+                                </div> 
+                                <div class="w-5/6 flex text-center items-center justify-center ">
+                                    <p>Agregar al Carrito</p>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="mb-4 ">
+                            <div class="block bg-orange-2 text-sm font-bold rounded border border-orange-700 p-1 flex flex-row items-center justify-rounded ">
+                                <div class="w-1/6 bg-black rounded p-1 py-2 flex items-center justify-center ">
+                                    <div>
+                                            <img src="public/img/arrow-icon.png "/>
+                                    </div>
+                                </div> 
+                                <div class="w-5/6 flex text-center items-center justify-center ">
+                                    <p>Agregar al Carrito</p>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="mb-4 ">
+                            <p class="text-sm font-semibold ">Vendido y enviado por Amazon.com</p>
+                        </div>
+                        <div class="mb-4 ">
+                            <p class="text-sm font-semibold ">Se puede envolver para regalo.</p>
+                        </div>
+                    </div>  
+                    <div class="mb-4 px-3 ">
+                        <div class="flex flex-row justify-between items-center ">
+                            <div class="w-1/12 mr-2 ">
+                                <img src="public/img/mark-icon.png " alt=" ">
+                            </div>
+                            <div class="w-11/12 ">
+                                <p class="font-bold text-blue-1 " style="font-size: .70rem; ">Enviar a Luis - San Salvador 1101</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-3 flex flex-row justify-between items-center px-4 py-4 -mx-1 ">
+                        <div class="w-1/2 flex flex-row justify-center items-center ">
+                            <div class="w-1/3 ">
+                                <img src="public/img/Ellipse 2.png " alt=" ">
+                            </div>
+                            <div class="w-2/3 ">
+                                <p class="text-xs ">Usado:</p>
+                            </div>
+                        </div>
+                        <div class="w-1/2 text-right ">
+                            <p class="text-xs ">US$ 5.50</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex items-center justify-center flex-row py-12 relative ">
+                    <select class="block appearance-none w-full bg-gray-2 border border-gray-400 hover:border-gray-500 px-12 py-2 rounded-lg focus:outline-none focus:shadow-outline h-10 text-sm font-bold ">
+                            <option>Agregar a la Lista</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 ">
+                        <svg class="fill-current h-4 w-4 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 20 20 "><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z "/></svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-8 flex flex-col border-b border-gray-400 lg:px-8 px-2 ">
+        <div class="lg:px-8 mb-4 px-2 ">
+            <h3 class="font-bold text-orange-1 text-3xl ">Customers recommend</h3>
+        </div>
+        <div class="flex lg:flex-row flex-col items-center justify-between pb-8 ">
+            <div class="lg:w-1/5 flex flex-col rounded-lg border border-gray-400 mx-4 py-6 lg:mb-0 mb-4 ">
+                <div class="flex justify-center items-center mb-4 ">
+                    <img src="public/img/img-prod2.png " alt=" ">                    
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                </div>
+                <div class="px-6 mb-2 ">
+                    <p class="text-gray-1 text-sm ">by Mellanni</p>
+                </div>
+                <div class="flex flex-row px-6 mb-4 justify-start items-center ">
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-1.png " alt=" ">
+                    </div>
+                    <div class="w-1/6 ">
+                        <img src="public/img/Line 3.png " alt=" ">
+                    </div>
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-2.png " alt=" ">
+                    </div>
+                </div>
+                <div class="flex flex-row px-6 mb-4 ">
+                    <div class="w-4/6 ">
+                        <fieldset class="rating ">
+                            <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                            <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                            <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                            <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                            <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                            <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                            <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                            <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                            <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                            <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                        </fieldset>
+                    </div>
+                    <div class="w-2/6 flex justify-center items-center ">
+                        <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                    </div>
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-gray-2 italic font-bold ">“Great quallity linen. Very satisfied.”</p>
+                    <p class="text-gray-2 italic font-bold ">- Amazon Customer</p>
+                </div>
+            </div>
+            <div class="lg:w-1/5 flex flex-col rounded-lg border border-gray-400 mx-4 py-6 lg:mb-0 mb-4 ">
+                <div class="flex justify-center items-center mb-4 ">
+                    <img src="public/img/img-prod2.png " alt=" ">                    
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                </div>
+                <div class="px-6 mb-2 ">
+                    <p class="text-gray-1 text-sm ">by Mellanni</p>
+                </div>
+                <div class="flex flex-row px-6 mb-4 justify-start items-center ">
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-3.png " alt=" ">
+                    </div>
+                    <div class="w-1/6 ">
+                        <img src="public/img/Line 3.png " alt=" ">
+                    </div>
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-4.png " alt=" ">
+                    </div>
+                    <div class="w-1/6 ">
+                        <img src="public/img/prime-icon.png " alt=" ">
+                    </div>
+                </div>
+                <div class="flex flex-row px-6 mb-4 ">
+                    <div class="w-4/6 ">
+                        <fieldset class="rating ">
+                            <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                            <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                            <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                            <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                            <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                            <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                            <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                            <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                            <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                            <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                        </fieldset>
+                    </div>
+                    <div class="w-2/6 flex justify-center items-center ">
+                        <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                    </div>
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-gray-2 italic font-bold ">“Very comfortable. To sleep on.”</p>
+                    <p class="text-gray-2 italic font-bold ">- scottzell</p>
+                </div>
+            </div>
+            <div class="lg:w-1/5 flex flex-col rounded-lg border border-gray-400 mx-4 py-6 lg:mb-0 mb-4 ">
+                <div class="flex justify-center items-center mb-4 ">
+                    <img src="public/img/img-prod2.png " alt=" ">                    
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                </div>
+                <div class="px-6 mb-2 ">
+                    <p class="text-gray-1 text-sm ">by Mellanni</p>
+                </div>
+                <div class="flex flex-row px-6 mb-4 justify-start items-center ">
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-3.png " alt=" ">
+                    </div>
+                    <div class="w-1/6 ">
+                        <img src="public/img/Line 3.png " alt=" ">
+                    </div>
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-4.png " alt=" ">
+                    </div>
+                    <div class="w-1/6 ">
+                        <img src="public/img/prime-icon.png " alt=" ">
+                    </div>
+                </div>
+                <div class="flex flex-row px-6 mb-4 ">
+                    <div class="w-4/6 ">
+                        <fieldset class="rating ">
+                            <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                            <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                            <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                            <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                            <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                            <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                            <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                            <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                            <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                            <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                        </fieldset>
+                    </div>
+                    <div class="w-2/6 flex justify-center items-center ">
+                        <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                    </div>
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-gray-2 italic font-bold ">“Very comfortable. To sleep on.”</p>
+                    <p class="text-gray-2 italic font-bold ">- scottzell</p>
+                </div>
+            </div>
+            <div class="lg:w-1/5 flex flex-col rounded-lg border border-gray-400 mx-4 py-6 lg:mb-0 mb-4 ">
+                <div class="flex justify-center items-center mb-4 ">
+                    <img src="public/img/img-prod2.png " alt=" ">                    
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                </div>
+                <div class="px-6 mb-2 ">
+                    <p class="text-gray-1 text-sm ">by Mellanni</p>
+                </div>
+                <div class="flex flex-row px-6 mb-4 justify-start items-center ">
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-1.png " alt=" ">
+                    </div>
+                    <div class="w-1/6 ">
+                        <img src="public/img/Line 3.png " alt=" ">
+                    </div>
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-2.png " alt=" ">
+                    </div>
+                </div>
+                <div class="flex flex-row px-6 mb-4 ">
+                    <div class="w-4/6 ">
+                        <fieldset class="rating ">
+                            <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                            <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                            <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                            <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                            <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                            <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                            <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                            <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                            <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                            <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                        </fieldset>
+                    </div>
+                    <div class="w-2/6 flex justify-center items-center ">
+                        <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                    </div>
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-gray-2 italic font-bold ">“Great quallity linen. Very satisfied.”</p>
+                    <p class="text-gray-2 italic font-bold ">- Amazon Customer</p>
+                </div>
+            </div>
+            <div class="lg:w-1/5 flex flex-col rounded-lg border border-gray-400 mx-4 py-6 lg:mb-0 mb-4 ">
+                <div class="flex justify-center items-center mb-4 ">
+                    <img src="public/img/img-prod2.png " alt=" ">                    
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-blue-1 font-bold ">Juego de sábana de cama Mellanni, microfibra cepillada de alta calida...</p>
+                </div>
+                <div class="px-6 mb-2 ">
+                    <p class="text-gray-1 text-sm ">by Mellanni</p>
+                </div>
+                <div class="flex flex-row px-6 mb-4 justify-start items-center ">
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-1.png " alt=" ">
+                    </div>
+                    <div class="w-1/6 ">
+                        <img src="public/img/Line 3.png " alt=" ">
+                    </div>
+                    <div class="w-2/6 ">
+                        <img src="public/img/num-2.png " alt=" ">
+                    </div>
+                </div>
+                <div class="flex flex-row px-6 mb-4 ">
+                    <div class="w-4/6 ">
+                        <fieldset class="rating ">
+                            <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                            <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                            <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                            <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                            <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                            <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                            <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                            <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                            <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                            <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                        </fieldset>
+                    </div>
+                    <div class="w-2/6 flex justify-center items-center ">
+                        <p class="text-blue-1 text-sm font-bold ">55,998</p>
+                    </div>
+                </div>
+                <div class="px-6 mb-4 ">
+                    <p class="text-gray-2 italic font-bold ">“Great quallity linen. Very satisfied.”</p>
+                    <p class="text-gray-2 italic font-bold ">- Amazon Customer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 flex flex-col border-b border-gray-400 lg:px-8 px-2 ">
+        <div class="mb-4 lg:px-8 px-2 ">
+            <h3 class="text-3xl font-bold ">¿Tienes una pregunta?</h3>
+        </div>
+        <div class="mb-4 lg:px-8 px-2 ">
+            <p class="text-gray-1 ">Busca la información del producto, preguntas frecuentes, opniones...</p>
+        </div>
+        <div class="flex flex-row lg:px-8 px-2 items-center justify-start ">
+            <div class="flex flex-row lg:w-8/12 w-full rounded-lg border border-gray-500 items-center ">
+                <div class="p-3 ">
+                    <img src="public/img/search_24px.png " alt=" ">
+                </div>
+                <div class="w-full ">
+                    <input type="text " class="w-full block appearance-none my-2 focus:outline-none ">
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center my-16 lg:px-8 px-2 ">
+            <div class="w-11/12 border-b border-gray-300 "></div>
+        </div>
+        <div class="mb-4 lg:px-8 px-2 ">
+            <h3 class="text-3xl font-bold text-orange-1 ">Descripción del producto</h3>
+        </div>
+        <div class="mb-4 lg:px-8 px-2 ">
+            <p class="text-gray-1 text-sm ">Tamaño: <span class="font-bold ">Twin</span>   |   Color: <span class="font-bold ">Baby Blue</span></p>
+        </div>
+        <div class="lg:px-8 px-2 ">
+            <p class="mb-4 ">Juego de sábanas impreso. 100 % de microfibra cepillada de la más alta calidad.</p>
+            <p class="mb-4 ">Deja que la fina ropa de cama Mellanni te envuelva en elegancia, lujo y confort.
+                <br>
+                El juego de ropa de cama entallado con un diseño cuadrifolio.
+                <br>
+                Cuidadosamente elaborado para añadir una exquisita clase a tu recámara y mejorar la decoración.</p>
+            <p class="mb-4 ">Entendemos que tu tiempo es importante, esa es la razón por la cual esta excepcionalmente suave y fuerte ropa de cama
+                <br>
+                Es antiarrugas, resistente al desgaste y a las manchas, para que puedas pasar más tiempo en las cosas importantes de la vida.
+                <br>
+                Es el ajuste perfecto con cuidado fácil, todo en uno.
+                </p>
+            <p class="mb-4 ">Sábanas de microfibra hipoalergénica, mantiene a las narices tapadas lejos, mientras bloquea alérgenos no deseados, ácaros del polvo y la humedad.
+                <br>
+                Deja que tu cuerpo respire mientras te mantienes fresco y cómodo toda la noche.</p>
+            <p class="mb-4 ">-
+                <br>
+                -</p>
+            <p class="mb-4 ">Desplázate hacia arriba y haz clic en añadir al carrito para tu mejor sueño.</p>
+        </div>
+    </section>
+
+    <section class="py-8 flex flex-col lg:px-8 px-2 ">
+        <div class="mb-4 lg:px-8 px-2 ">
+            <h3 class="text-3xl font-bold text-orange-1 ">Información del producto</h3>
+        </div>
+        <div class="mb-4 lg:px-8 px-2 ">
+            <p class="text-sm ">Tamaño: <span class="font-bold ">Twin</span>   |   Color: <span class="font-bold ">Baby Blue</span></p>
+        </div>
+        <div class="flex lg:flex-row flex-col lg:px-8 px-2 ">
+            <div class="lg:w-7/12 w-full flex flex-col border border-gray-400 mt-3 mr-6 ">
+                <div class="flex flex-row w-full border-b border-gray-400 ">
+                    <div class="w-1/2 bg-gray-3 py-2 px-4 ">
+                        <p>Dimensiones del paquete</p>
+                    </div>
+                    <div class="w-1/2 py-2 px-4 ">
+                        <p>11 x 9.6 x 3 pulgadas</p>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full border-b border-gray-400 ">
+                    <div class="w-1/2 bg-gray-3 py-2 px-4 ">
+                        <p>Peso del producto</p>
+                    </div>
+                    <div class="w-1/2 py-2 px-4 ">
+                        <p>1.85 pounds</p>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full border-b border-gray-400 ">
+                    <div class="w-1/2 bg-gray-3 py-2 px-4 ">
+                        <p>Peso del envío</p>
+                    </div>
+                    <div class="w-1/2 py-2 px-4 ">
+                        <p>2.35 pounds</p>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full border-b border-gray-400 ">
+                    <div class="w-1/2 bg-gray-3 py-2 px-4 ">
+                        <p>Fabricante</p>
+                    </div>
+                    <div class="w-1/2 py-2 px-4 ">
+                        <p>Mellanni</p>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full border-b border-gray-400 ">
+                    <div class="w-1/2 bg-gray-3 py-2 px-4 ">
+                        <p>ASIN</p>
+                    </div>
+                    <div class="w-1/2 py-2 px-4 ">
+                        <p>B00O35D38Y</p>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full border-b border-gray-400 ">
+                    <div class="w-1/2 bg-gray-3 py-2 px-4 ">
+                        <p>Número de modelo del producto</p>
+                    </div>
+                    <div class="w-1/2 py-2 px-4 ">
+                        <p>SYNCHKG053477</p>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full border-b border-gray-400 ">
+                    <div class="w-1/2 bg-gray-3 py-2 px-4 ">
+                        <p>Opinión media de los clientes</p>
+                    </div>
+                    <div class="w-1/2 py-2 px-4 flex flex-col ">
+                        <div class="flex lg:flex-row flex-col ">
+                            <div class="lg:w-3/6 ">
+                                <fieldset class="rating ">
+                                    <input type="radio " id="star5 " name="rating " value="5 " /><label class = "full " for="star5 " title="Awesome - 5 stars "></label>
+                                    <input type="radio " id="star4half " name="rating " value="4 and a half " /><label class="half " for="star4half " title="Pretty good - 4.5 stars "></label>
+                                    <input type="radio " id="star4 " name="rating " value="4 " /><label class = "full " for="star4 " title="Pretty good - 4 stars "></label>
+                                    <input type="radio " id="star3half " name="rating " value="3 and a half " /><label class="half " for="star3half " title="Meh - 3.5 stars "></label>
+                                    <input type="radio " id="star3 " name="rating " value="3 " /><label class = "full " for="star3 " title="Meh - 3 stars "></label>
+                                    <input type="radio " id="star2half " name="rating " value="2 and a half " /><label class="half " for="star2half " title="Kinda bad - 2.5 stars "></label>
+                                    <input type="radio " id="star2 " name="rating " value="2 " /><label class = "full " for="star2 " title="Kinda bad - 2 stars "></label>
+                                    <input type="radio " id="star1half " name="rating " value="1 and a half " /><label class="half " for="star1half " title="Meh - 1.5 stars "></label>
+                                    <input type="radio " id="star1 " name="rating " value="1 " /><label class = "full " for="star1 " title="Sucks big time - 1 star "></label>
+                                    <input type="radio " id="starhalf " name="rating " value="half " /><label class="half " for="starhalf " title="Sucks big time - 0.5 stars "></label>
+                                </fieldset>
+                            </div>
+                            <div class="lg:w-3/6 flex justify-center items-center ">
+                                <p class="text-blue-1 text-sm font-bold ">55,998 opiniones de clientes</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>4.4 de un máximo de 5 estrelas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-5/12 flex flex-col lg:px-8 px-2 ">
+                <div class="border-b border-gray-400 mb-4 pb-4 mt-4 ">
+                    <p class="font-bold text-xl ">Garantía y asistencia</p>
+                </div>
+                <div class="mb-8 ">
+                    <p><span class="font-bold ">Garantía del producto: </span>Para obtener la información sobre la garantía de este producto, <span class="font-bold ">Product Warranty: </span>For wararanty information about this product, please haz clic aquí</p>
+                </div>
+                <div class="border-b border-gray-400 mb-4 pb-4 ">
+                    <p class="font-bold text-xl ">Comentarios</p>
+                </div>
+                <div class="mb-4 ">
+                    <p>Si vendes este producto, ¿Te gustaría <span class="text-blue-1 font-bold ">sugerir actualizaciones mediante el soporte al vendedor</span>? ¿Quieres <span class="text-blue-1 font-bold ">informarnos sobre un precio más abajo?</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-2 mt-32 ">
+        <div class="flex flex-row justify-center items-center py-4 ">
+            <div class="text-white ">
+                <h2>Inicio de página</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-main ">
+        <div class="flex flex-col justify-center items-center ">
+            <div class="flex lg:flex-row flex-col lg:w-9/12 w-full py-12 ">
+                <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4 ">
+                    <h3 class="font-bold text-lg lg:text-left text-center ">Conócenos</h3>
+                    <div class="lg:inline hidden ">
+                        <p class="text-sm ">Trabaja en Amazon</p>
+                        <p class="text-sm ">Blog</p>
+                        <p class="text-sm ">Acerca de Amazon</p>
+                        <p class="text-sm ">Relaciones con los inversionistas</p>
+                        <p class="text-sm ">Dispositivos Amazon</p>
+                        <p class="text-sm ">Visita un centro logístico de Amazon</p>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4 ">
+                    <h3 class="font-bold text-lg lg:text-left text-center ">Gana dinero con nosotros</h3>
+                    <div class="lg:inline hidden ">
+                        <p class="text-sm ">Vende en Amazon</p>
+                        <p class="text-sm ">Vende tus servicios en Amazon</p>
+                        <p class="text-sm ">Vende en Amaon Business</p>
+                        <p class="text-sm ">Vende tus Apps en Amazon</p>
+                        <p class="text-sm ">Programa de afiliados</p>
+                        <p class="text-sm ">Anuncia tus productos</p>
+                        <p class="text-sm ">Pubilca tu libro en Kindle</p>
+                        <p class="text-sm ">> Ver Más</p>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4 ">
+                    <h3 class="font-bold text-lg lg:text-left text-center ">Productos de Pago Amazon</h3>
+                    <div class="lg:inline hidden ">
+                        <p class="text-sm ">Compra con puntos</p>
+                        <p class="text-sm ">Recarga tu Saldo</p>
+                        <p class="text-sm ">Convertidor de Moneda de Amazon</p>
+                    </div>
+                </div>
+                <div class="lg:w-3/12 text-white flex flex-col justify-start pl-8 lg:mb-0 mb-4 ">
+                    <h3 class="font-bold text-lg lg:text-left text-center ">Podemos ayudarte</h3>
+                    <div class="lg:inline hidden ">
+                        <p class="text-sm ">Tu cuenta</p>
+                        <p class="text-sm ">Tus pedidos</p>
+                        <p class="text-sm ">Tarifas de Envío y Políticas</p>
+                        <p class="text-sm ">Devoluciones y Reemplazos</p>
+                        <p class="text-sm ">Admistrar dispositivos</p>
+                        <p class="text-sm ">Amazon Assistant</p>
+                        <p class="text-sm ">Ayuda</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center ">
+                <img src="public/img/logo.png " alt=" " class="h-16 w-auto mb-8 ">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script>
+
+    <script src="public/js/scripts.js "></script>
+</body>
+
+</html>

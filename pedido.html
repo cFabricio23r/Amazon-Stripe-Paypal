@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link data-n-head="true" rel="icon" type="image/png" href="public/img/favicon.png">
+
+    <!--Slick-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <link rel="stylesheet" href="public/css/app.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <title>Amazon Lite</title>
+</head>
+
+<body style="background-color: white;">
+  
+    <section class="container m-auto">
+        <div class="flex flex-col py-12">
+            <div class="flex flex-row">
+                <div></div>
+                <div class="w-2/3 flex flex-row items-center justify-between">
+                    <div class="w-1/5 flex items-center justify-center">
+                       <img src="public/img/logo-3.png" alt="" class="">
+                    </div>
+                    <div class="w-1/5 flex items-end justify-center">
+                        <a href="">Iniciar Sesion</a>
+                    </div>
+                    <div class="w-1/5 items-end justify-center">
+                        <a href="">Envio y Pago</a>
+                    </div>
+                    <div class="w-1/5 items-end justify-center">
+                        <a href="">Opcion de Regalo</a>
+                    </div>
+                    <div class="w-1/5 items-end justify-center">
+                        <a href="">Finalizar Pedido</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="border-b border-gray-400" id="form-add-2">
+        <div class="container m-auto mb-12">
+            <div class="flex flex-col ">
+                <div class="mb-16">
+                    <h2 class="font-bold text-3xl mb-2">Seleccionar una dirección de envío</h2>
+                    <p class="font-semibold text-md">¿Aparece a continuación la dirección que deseas utilizar? Si es así, haz clic en el botón "Enviar a esta dirección". O puedes introducir una nueva dirección de envío. </p>
+                </div>
+                <div class="flex flex-col mb-2">
+                    <div class="mb-4">
+                        <h3 class="font-bold text-xl">Scottie Frankie Pairpoint	 Nacey	</h3>
+                        <p id="line-1">641 Charing Cross Junction</p>
+                        <p id="line-2">Long Beach Art. 1234</p>
+                        <p id="line-3">Casa #22</p>
+                        <p id="line-4">California, Estados Unidos 1203</p>
+                        <p id="phone">Teléfono Celular: 72702036</p>
+                    </div>
+                </div>
+                <div class="flex w-1/4 justify-center mb-5" id="pay">
+                    <a href=" " class="w-full block bg-button-main text-md font-bold rounded py-2 px-6 border border-orange-700 text-center">Entregar a esta dirección</a>
+                </div>
+                <div class="flex flex-row w-1/4 justify-center mb-2">
+                    <div class="w-1/2 mr-1">
+                        <a href=" " class="w-full block bg-gray-2 border border-gray-400 hover:border-gray-500 text-md font-bold rounded py-1 px-6 text-center">Editar</a>
+                    </div>
+                    <div class="w-1/2 ml-1">
+                        <a href=" " class="w-full block bg-gray-2 border border-gray-400 hover:border-gray-500 text-md font-bold rounded py-1 px-6 text-center">Eliminar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="container m-auto py-8" id="form-add">
+        <div class="flex flex-row">
+            <div class="w-1/2 flex flex-col">
+                <div class="mb-4">
+                    <h3 class="font-bold text-lg">Agregar otra dirección</h3>
+                </div>
+                <div class="mb-4">
+                    <p class="text-md">Asegúrate de hacer clic en "Enviar a esta dirección" cuando hayas terminado.</p>
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">Nombre / Quién recibe:</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">DIrección (calle, número de casa o interior, torre, empresa):</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">Línea de dirección 2 :</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">Ciudad:</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">Estado:</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">Código postal</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">País / región</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">Estado:</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">Número de teléfono: (<span class="text-blue-1">más información</span>)</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-4 mt-6   ">
+                        <h3 class="font-bold text-lg">Agregar instrucciones de entrega (opcional)</h3>
+                    </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">¿Necesitamos indicaciones adicionales para encontrar esta dirección?</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+                <div class="mb-2">
+                    <p class="text-md font-bold">¿Necesitamos un código de seguridad o un número de casilla a llamar para acceso?</p>
+                    <input type="text " class="w-full block appearance-none my-1 p-2 focus:outline-none rounded border border-gray-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="cards" class="hidden">
+        <div class="container m-auto flex flex-col">
+            <div class="flex flex-row mb-4">
+                <div class="w-8/12 border border-gray-400 p-3 rounded">
+                    <div class="w-full bg-gray-1 p-3 flex flex-row rounded">
+                        <div class="mr-2">
+                            <img src="public/img/info_24px.png" alt="">
+                        </div>
+                        <div class="">
+                            <p class="text-md font-semibold">Especifica a continuación cómo te gusta realizar el pago y lo guardaremos como opción.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row mb-4 mt-12 border-b py-8">
+                <div class="w-full items-center">
+                    <h3 class="font-bold text-xl">Selecciona un método de pago</h3>
+                </div>
+            </div>
+            <div class="flex flex-row mb-4 mt-6" id="paypal">
+                <div class="w-9/12 items-center">
+                    <h3 class="font-bold text-xl">Selecciona uno de nuestros metodos de pago</h3>
+                    <p class="text-md">Amazon acepta la mayoría de tarjetas de crédito o débito y plataformas de pago</p>
+                </div>
+                <div class="w-3/12 flex flex-row">
+                    <div class="w-1/2">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="DXH4BED74SKCC">
+                            <input type="image" src="./public/img/Paypal.svg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                    <div class="w-1/2 justify-start items-center" id="stripe-pay">
+                        <a  class="w-full bg-button-main h-10 py-2 rounded border border-orange-700 text-center flex items-center justify-center">
+                            <img src="./public/img/stripe.svg" alt="" class="h-6">
+                            <span class="text-base text-sm">Pagar con tarjeta</span>
+                        </a>
+                    </div>    
+                </div>
+                
+            </div>
+            <div id="stripe" class="hidden">
+                <div class="flex flex-row mb-4 mt-6 flex-wrap"">
+                    <div class="w-9/12 items-center">
+                        <h3 class="font-bold text-xl">Selecciona uno de nuestros metodos de pago</h3>
+                        <p class="text-md">Amazon acepta la mayoría de tarjetas de crédito o débito y plataformas de pago</p>
+                    </div>
+                    <div class="w-3/12 flex flex-row">
+                        <div class="w-1/2">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="DXH4BED74SKCC">
+                                <input type="image" src="./public/img/paypal-badge-disable-min.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </div>
+                        <div class="w-1/2 justify-start items-center">
+                            <a class="w-full bg-button-main h-10 py-2 rounded border border-orange-700 text-center flex items-center justify-center">
+                                <img src="./public/img/stripe.svg" alt="" class="h-6">
+                                <span class="text-base text-sm">Pagar con tarjeta</span>
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="w-full container-card-stripe mt-8">
+                    <div class="text-card-stripe">
+                        <p>Ingrese la información de su tarjeta:</p>
+                    </div>
+                    <div class="card-stripe">
+                        <div class="content-card-stripe">
+                            <form id="card-form" action="">
+                                <input type="hidden" name="stripeToken" value="tok_1EwyRXBvTVUdv5mz935w4NDh">
+                                <div id="card-element" class="p-5"></div>
+        
+                                <button type="submit">Pagar ahora</button>
+                            </form>
+                            <div id="errors"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Footer>
+        <div class="flex lg:flex-row justify-center items-center">
+            <div class="lg:w-11/12 border-t border-gray-400 py-8 flex flex-col">
+                <div class="flex lg:flex-row justify-center items-center mb-4">  
+                    <div class="lg:w-1/2 flex flex-row justify-between items-center">
+                        <div class="w-1/3">
+                            <p class="text-blue-1 font-semibold text-center">Condiciones de uso</p>
+                        </div>
+                        <div class="w-1/3">
+                            <p class="text-blue-1 font-semibold text-center">Aviso de privacidad</p>
+                        </div>
+                        <div class="w-1/3">
+                            <p class="text-blue-1 font-semibold text-center">Ayuda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex lg:flex-row justify-center items-center">  
+                    <div class="lg:w-1/2 flex justify-center items-center">
+                        <p class="font-semibold">© 1996-2019, Amazon.com, Inc. o sus filiales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script>
+
+    <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
+    <script type="text/javascript " src="//code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
+    <script type="text/javascript " src="slick/slick.min.js "></script>
+
+    <script src="public/js/scripts.js "></script>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="public/js/stripe.js"></script>
+</body>
+
+</html>
